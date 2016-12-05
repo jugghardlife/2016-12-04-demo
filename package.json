@@ -57,6 +57,8 @@
     "webpack-hot-middleware": "^2.6.0"
   },
   "dependencies": {
+    "bootstrap": "^3.3.7",
+    "grunt-cli": "^1.2.0",
     "material-ui": "^0.16.4",
     "react": "^15.3.1",
     "react-dom": "^15.3.1",

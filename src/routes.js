@@ -18,7 +18,6 @@ class Routes extends React.Component {
             <Route path='/recommend' component={Recommend} />
             <Route path='/publish' component={Publish} />
             <Route path='/personal' component={Personal} />
-            
           </Route>
         </Router>
       </div>

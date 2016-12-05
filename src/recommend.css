@@ -1,22 +1,29 @@
 .swich {
+  position: relative;
   display: flex;
   background-color: #666;
-  height: 87px;
 }
 .left {
+  position: absolute;
+  z-index: 22;
   width: 50vw;
+  height: 30px;
   border: none;
   background-color: red;
   border-radius: 0 20px 20px 0;
 }
 .right {
-  width: 50vw;
+  position: absolute;
+  right: 0;
+  width: 60vw;
+  height: 30px;
   border: none;
 }
 .tableWrap {
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
+  padding-top: 30px;
 }
 .tableWrap a {
   text-decoration: none;

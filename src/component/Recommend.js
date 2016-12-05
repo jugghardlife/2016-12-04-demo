@@ -18,9 +18,12 @@ class Recommend extends React.Component {
   render () {
     return(
       <div>
+        <div className="height"></div>
         <div className="switch">
-          <button className="left" onClick={this.leftClick.bind(this)}>展</button>
-          <button className="right" onClick={this.rightClick.bind(this)}>文</button>
+          <div className="top">
+            <button className="left" onClick={this.leftClick.bind(this)}>展</button>
+            <button className="right" onClick={this.rightClick.bind(this)}>文</button>
+          </div>
         </div>
         <div ref="tableSwitch" style={{marginLeft:this.state.margin}}>
           <Table tableClass="tableFist"/>

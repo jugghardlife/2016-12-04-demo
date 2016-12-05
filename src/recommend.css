@@ -3,6 +3,9 @@
   display: flex;
   background-color: #666;
 }
+.top {
+  height: 30px;
+}
 .left {
   position: absolute;
   z-index: 22;
@@ -22,8 +25,7 @@
 .tableWrap {
   display: flex;
   flex-direction: column;
-  margin-bottom: 20px;
-  padding-top: 30px;
+  margin-bottom: 15px;
 }
 .tableWrap a {
   text-decoration: none;

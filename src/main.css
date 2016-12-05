@@ -2,7 +2,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: "Microsoft YaHei",sans-serif; 
+	font-family: "Microsoft YaHei",sans-serif;
 
 }
 ul,li{
@@ -12,4 +12,5 @@ ul,li{
 	position: fixed;
 	bottom: 0;
 	width: 100vw;
+	text-decoration: none;
 }

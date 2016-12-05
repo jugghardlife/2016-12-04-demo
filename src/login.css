@@ -1,0 +1,7 @@
+.wrap{
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../images/login/3.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+}

@@ -1,24 +1,34 @@
 import React, { PropTypes } from 'react';
 import Swiper from 'swiper';
-import img1 from '../images/u1.jpg';
-import img2 from '../images/u3.jpg';
-import img3 from '../images/u5.jpg';
-import img4 from '../images/u8.jpg';
-import img5 from '../images/u10.jpg';
+import {Link} from 'react-router';
+import img1 from '../../images/loading/1.jpg';
+import img2 from '../../images/loading/2.jpg';
+import img3 from '../../images/loading/3.jpg';
+import img4 from '../../images/loading/4.jpg';
+import img5 from '../../images/loading/5.png';
 
-class Home extends React.Component {
+class Shuffling extends React.Component {
+  constructor(){
+      super()
+      this.state={
+        data:""
+      }
+    }
   componentDidMount(){
     var mySwiper = new Swiper ('.swiper-container', {
 
       // 如果需要分页器
       pagination: '.swiper-pagination',
-      autoplay: 5000,
+    })
+    var d = new Date();
+    var str = "-" +d.getFullYear()+"/"+(d.getMonth()+1)+"/"+d.getDate()+ "-" ;
+    this.setState({
+      data:str
     })
   }
   handleTouch(e){
     let dom = this.refs.nopagination;
     if (dom.className.indexOf('swiper-slide-active')!= -1) {
-      console.log('000');
       this.refs.dott.style.display='none';
     }else {
       this.refs.dott.style.display='block';
@@ -32,7 +42,10 @@ class Home extends React.Component {
             <div className="swiper-slide slide2"></div>
             <div className="swiper-slide slide3"></div>
             <div className="swiper-slide slide4"></div>
-            <div className="swiper-slide slide5" ref='nopagination'></div>
+            <div className="swiper-slide slide5" ref='nopagination'>
+              <p style={{display:"block",marginTop: "70vh",textAlign: "center",color:"#666"}}>{this.state.data}</p>
+              <Link to="/" activeStyle={{display:"block",marginTop: "3vh",textAlign: "center",color:"#666",textDecoration:"none"}}>今日推送 >></Link>
+            </div>
         </div>
         <div className="swiper-pagination" ref='dott'></div>
     </div>
@@ -40,4 +53,4 @@ class Home extends React.Component {
   }
 }
 
-export default Home;
+export default Shuffling;

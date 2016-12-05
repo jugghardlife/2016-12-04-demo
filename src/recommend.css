@@ -1,3 +1,18 @@
+.swich {
+  display: flex;
+  background-color: #666;
+  height: 87px;
+}
+.left {
+  width: 50vw;
+  border: none;
+  background-color: red;
+  border-radius: 0 20px 20px 0;
+}
+.right {
+  width: 50vw;
+  border: none;
+}
 .tableWrap {
   display: flex;
   flex-direction: column;
@@ -5,7 +20,7 @@
 }
 .tableWrap a {
   text-decoration: none;
-  color: #000;
+  color: #fff;
   -webkit-background-size: cover;
   background-size: cover;
   background-position: center center;
@@ -38,8 +53,8 @@
   line-height: 20px;
   margin-right: 5px;
 }
-.glyphicon-share {
-  margin-right: 40px;
+.table-bottom .glyphicon-share {
+  margin-right: 20px;
 }
 .tableSecend {
   background-image: url(../images/recommend/tuijian/2.jpg);

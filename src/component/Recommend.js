@@ -5,16 +5,28 @@ class Recommend extends React.Component {
   constructor(){
     super();
     this.state={
-      data:""
+      margin:"",
+
     }
+  }
+  leftClick(){
+    this.setState({margin:"100vw"})
+  }
+  rightClick(){
+    this.setState({margin:"0"})
   }
   render () {
     return(
       <div>
-        <div ></div>
-        <Table tableFist="tableFist"/>
-        <Table tableFist="tableSecend"/>
-        <Table tableFist="tableThird"/>
+        <div className="switch">
+          <button className="left" onClick={this.leftClick.bind(this)}>展</button>
+          <button className="right" onClick={this.rightClick.bind(this)}>文</button>
+        </div>
+        <div ref="tableSwitch" style={{marginLeft:this.state.margin}}>
+          <Table tableClass="tableFist"/>
+          <Table tableClass="tableSecend"/>
+          <Table tableClass="tableThird"/>
+        </div>
       </div>
     )
   }

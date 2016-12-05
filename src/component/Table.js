@@ -1,12 +1,12 @@
 import React from "react";
-import {Link} from "react-router";
+
 
 
 class Table extends React.Component{
   render(){
     return(
       <div  className="tableWrap" >
-        <a className={this.props.tableFist}>
+        <a className={this.props.tableClass}>
           <p>剩余时间</p>
           <h3>qweqweq</h3>
           <h5>qweqweqw</h5>

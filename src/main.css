@@ -1,0 +1,15 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Microsoft YaHei",sans-serif; 
+
+}
+ul,li{
+	list-style: nones;
+}
+.navfooter{
+	position: fixed;
+	bottom: 0;
+	width: 100vw;
+}

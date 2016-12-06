@@ -6,7 +6,6 @@ import Img4 from '../../images/home/first/midnav/4.jpg'
 import Img5 from '../../images/home/first/midnav/5.jpg'
 import Img6 from '../../images/home/first/midnav/6.jpg'
 import Swiper from 'swiper';
-import "../center.css";
 
 class Pichover extends React.Component {
 componentDidMount(){
@@ -21,12 +20,12 @@ componentDidMount(){
     <div　className="center" >
       <div className="swiper-container" >
         <div className="swiper-wrapper" >
-            <div className="swiper-slide lide" ><img　src= {Img1}/></div>
-            <div className="swiper-slide lide" ><img　src= {Img2}/></div>
-            <div className="swiper-slide lide" ><img　src= {Img3}/></div>
-            <div className="swiper-slide lide" ><img　src= {Img4}/></div>
-            <div className="swiper-slide lide" ><img　src= {Img5}/></div>
-            <div className="swiper-slide lide" ><img　src= {Img6}/></div>
+            <div className="swiper-slide slide" ><img　src= {Img1}/></div>
+            <div className="swiper-slide slide" ><img　src= {Img2}/></div>
+            <div className="swiper-slide slide" ><img　src= {Img3}/></div>
+            <div className="swiper-slide slide" ><img　src= {Img4}/></div>
+            <div className="swiper-slide slide" ><img　src= {Img5}/></div>
+            <div className="swiper-slide slide" ><img　src= {Img6}/></div>
         </div>
     </div>
     </div>

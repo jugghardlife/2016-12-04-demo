@@ -3,7 +3,6 @@ import Img3 from '../../images/home/first/top/1.jpg';
 import Img1 from '../../images/home/first/top/2.jpg';
 import Img2 from '../../images/home/first/top/3.jpg';
 import Swiper from 'swiper';
-import "../top.css"
 
 class Top extends React.Component {
   componentDidMount(){
@@ -23,13 +22,20 @@ class Top extends React.Component {
     }
   }
   render () {
+    let styles={
+      img:{
+        display:"block",
+        width:"100vw",
+        height:"30vh"
+      }
+    }
   return(
-    <div className="top">
-        <div className="swiper-container">
-          <div className="swiper-wrapper" onTouchEnd={this.handleTouch.bind(this)}>
-              <div className="swiper-slide slide1"><img　src= {Img1}/></div>
-              <div className="swiper-slide slide2"><img　src= {Img2}/></div>
-              <div className="swiper-slide slide3" ref='nopagination'><img　src= {Img3}/></div>
+    <div>
+        <div className="swiper-container ">
+          <div className="swiper-wrapper " onTouchEnd={this.handleTouch.bind(this)}>
+              <div className="swiper-slide slide1 "><img style={styles.img}　src= {Img1}/></div>
+              <div className="swiper-slide slide2 "><img style={styles.img}　src= {Img2}/></div>
+              <div className="swiper-slide slide3 " ref='nopagination'><img style={styles.img}　src= {Img3}/></div>
           </div>
           <div className="swiper-pagination" ref='dott'></div>
       </div>

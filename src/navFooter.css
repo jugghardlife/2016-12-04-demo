@@ -63,13 +63,22 @@
 	}
 }
 @media(max-width: 412px){
-	
+	.navfooter .four{
+		margin-top: -0.23rem;
+	}
 	.navfooter .five{
 		margin-top: 0.22rem;
 	}
 	.navfooter .six{
 		margin-top: 0.08rem;
 	}
+}
+@media(max-width: 360px){
+	
+	.navfooter .four{	
+		margin-top: -0.18rem;
+	}
+	
 }
 @media(max-width: 320px){
 	

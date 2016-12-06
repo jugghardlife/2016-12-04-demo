@@ -31,6 +31,7 @@ class Settings extends React.Component {
         position:'absolute',
         transition:'all 0.7s',
         top:'0',
+        zIndex:'1',
         left:this.state.show? '0' : '100%'
       }
     }

@@ -36,13 +36,13 @@ class Shuffling extends React.Component {
   }
   render () {
     return (
-      <div className="swiper-container">
-        <div className="swiper-wrapper" onTouchEnd={this.handleTouch.bind(this)}>
-            <div className="swiper-slide slide1"></div>
-            <div className="swiper-slide slide2"></div>
-            <div className="swiper-slide slide3"></div>
-            <div className="swiper-slide slide4"></div>
-            <div className="swiper-slide slide5" ref='nopagination'>
+      <div className="swiper-container swipercontainer">
+        <div className="swiper-wrapper swiperwrapper" onTouchEnd={this.handleTouch.bind(this)}>
+            <div className="swiper-slide same slideOne"></div>
+            <div className="swiper-slide same slideTwo"></div>
+            <div className="swiper-slide same slideThree"></div>
+            <div className="swiper-slide same slideFour"></div>
+            <div className="swiper-slide same slideFive" ref='nopagination'>
               <p style={{display:"block",marginTop: "70vh",textAlign: "center",color:"#666"}}>{this.state.data}</p>
               <p style={{display:"block",marginTop: "20vh",textAlign: "center",color:"#666",textDecoration:"none"}} onClick={this.props.xxx}>今日推送 >></p>
             </div>

@@ -14,7 +14,7 @@ class Personal extends React.Component {
   }
   render () {
     return(
-      <div style={{position:'relative'}}>
+      <div>
         <Avater settings={this.handleSettings.bind(this)}/>
         <Yunji />
         <Footer />

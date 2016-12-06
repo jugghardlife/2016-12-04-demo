@@ -2,7 +2,7 @@ import React from 'react';
 
 class Avater extends React.Component {
   handleClick(){
-    alert('aaa')
+    this.props.settings()
   }
   handleAvater(){
     alert('bbb')

@@ -14,7 +14,7 @@ class Show extends React.Component {
   	}
     return(
       <div>
-      	haha
+        哈哈哈
       </div>
     )
   }

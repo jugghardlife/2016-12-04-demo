@@ -7,7 +7,6 @@ class Personal extends React.Component {
     return(
       <div>
         Personal
-        <Settings />
       </div>
     )
   }

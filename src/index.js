@@ -2,6 +2,7 @@ import React from 'react';
 import Start from './component/start';
 import {render} from 'react-dom';
 import './main.css';
+import './containers/settings.css';
 import './shuffling.css';
 import './swiper.min.css';
 import './login.css';

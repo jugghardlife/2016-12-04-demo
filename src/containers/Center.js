@@ -9,23 +9,31 @@ import Swiper from 'swiper';
 
 class Pichover extends React.Component {
 componentDidMount(){
-  var mySwiper = new Swiper('.swiper-container',{
-     slidesPerView : 2.5,
-     spaceBetween : 10
+  var mySwiper = new Swiper('.a',{
+     slidesPerView : 2,
+     spaceBetween : 0,
+     loop : true,
+     loopAdditionalSlides : 1,
+     freeMode : true
      })
 }
 
   render () {
+    let styles = {
+      width:'100%',
+      display:'block',
+      height:'auto'
+    }
   return(
     <div　className="center" >
-      <div className="swiper-container" >
+      <div className="swiper-container a" >
         <div className="swiper-wrapper" >
-            <div className="swiper-slide slide" ><img　src= {Img1}/></div>
-            <div className="swiper-slide slide" ><img　src= {Img2}/></div>
-            <div className="swiper-slide slide" ><img　src= {Img3}/></div>
-            <div className="swiper-slide slide" ><img　src= {Img4}/></div>
-            <div className="swiper-slide slide" ><img　src= {Img5}/></div>
-            <div className="swiper-slide slide" ><img　src= {Img6}/></div>
+            <div className="swiper-slide slide" ><img　src= {Img1} style={styles}/></div>
+            <div className="swiper-slide slide" ><img　src= {Img2} style={styles}/></div>
+            <div className="swiper-slide slide" ><img　src= {Img3} style={styles}/></div>
+            <div className="swiper-slide slide" ><img　src= {Img4} style={styles}/></div>
+            <div className="swiper-slide slide" ><img　src= {Img5} style={styles}/></div>
+            <div className="swiper-slide slide" ><img　src= {Img6} style={styles}/></div>
         </div>
     </div>
     </div>

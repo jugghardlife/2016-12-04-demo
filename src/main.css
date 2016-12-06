@@ -13,7 +13,3 @@ ul,li{
 	bottom: 0;
 	width: 100vw;
 }
-.publish-wrap{
-	flex-grow: 1;
-	display: flex;
-}

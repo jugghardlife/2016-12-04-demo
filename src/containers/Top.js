@@ -6,10 +6,12 @@ import Swiper from 'swiper';
 
 class Top extends React.Component {
   componentDidMount(){
-    var mySwiper = new Swiper ('.swiper-container', {
+    var mySwiper = new Swiper ('.b', {
       initialSlide :1,
       autoplay: 5000,
-      pagination: '.swiper-pagination'
+      pagination: '.swiper-pagination',
+      loop : true,
+      loopAdditionalSlides : 1
     })
   }
   handleTouch(e){
@@ -31,7 +33,7 @@ class Top extends React.Component {
     }
   return(
     <div>
-        <div className="swiper-container ">
+        <div className="swiper-container b">
           <div className="swiper-wrapper " onTouchEnd={this.handleTouch.bind(this)}>
               <div className="swiper-slide slide1 "><img style={styles.img}　src= {Img1}/></div>
               <div className="swiper-slide slide2 "><img style={styles.img}　src= {Img2}/></div>

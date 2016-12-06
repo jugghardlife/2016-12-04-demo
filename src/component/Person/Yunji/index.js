@@ -43,23 +43,3 @@ class Yunji extends React.Component {
   }
 }
 export default Yunji;
-// constructor(){
-//     super();
-//     this.state={
-//       data:[],
-//       wait:true
-//     }
-//   }
-//   componentDidMount(){
-//     axios.get('https://raw.githubusercontent.com/richardjoin/08-demo/master/data/blogcard.json?a='+Math.random())
-//     .then( res => this.setState({data:res.data,wait:false}) )
-//     // 网页刷新不出来显示的
-//     .catch( err=> alert(err))
-//   }
-//   render () {
-//     return(
-//       <div className='blog-warp'>
-//         {this.state.wait ? <Loading /> :
-//           this.state.data.map( (item,i) => <BlogCard {...item} key={i} /> )
-//         }
-//       </div>

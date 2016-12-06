@@ -9,12 +9,16 @@ import Avater from './Person/Avater';
 import Footer from './Person/Footer';
 
 class Personal extends React.Component {
+  handleSettings(){
+    this.refs.settings.handleShow()
+  }
   render () {
     return(
       <div>
-        <Avater />
+        <Avater settings={this.handleSettings.bind(this)}/>
         <Yunji />
         <Footer />
+        <Settings ref='settings'/>
       </div>
     )
   }

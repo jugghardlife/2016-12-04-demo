@@ -14,9 +14,9 @@
 }
 .public-top h2{
   color: #dc2213;
-	margin: 2vh 0;
+	margin: 2.5vh 0;
 	margin-left: 17vh;
-	font-size: 20px;
+	font-size: 3.5vh;
 
 }
 .public-top img{
@@ -41,13 +41,13 @@
 }
 .main-main{
 	border: 1px solid #ddd;
-	height: 26vh;
+	height: 28vh;
 	margin: 0 auto;
 	background-color: #ddd;
 }
 .main-main a{
 	display: block;
-	font-size: 12px;
+	font-size: 2vh;
 	text-decoration: none;
 	color: #dc2213;
 	text-align: center;
@@ -78,7 +78,7 @@
 .public-footer a{
 	display: block;
 	float: left;
-	font-size: 12px;
+	font-size: 2vh;
 	text-decoration: none;
 	color: #dc2213;
 	margin-left: 1vh;
@@ -88,6 +88,4 @@
 }
 .public-footer img{
 	max-width: 2vh;
-}
-.pubBlog-wrap{
 }

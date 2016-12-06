@@ -8,7 +8,8 @@ class Settings extends React.Component {
     super();
     this.state={
       onOffone:true,
-      onOfftwo:true
+      onOfftwo:true,
+      show:false
     }
   }
   handleClickone(){
@@ -17,15 +18,27 @@ class Settings extends React.Component {
   handleClicktwo(){
     this.setState({onOfftwo: ! this.state.onOfftwo})
   }
+  handleShow(){
+    this.setState({show:!this.state.show})
+  }
   render () {
     let switchOne = this.state.onOffone ? <div className='switch-on-off'>开<span>/关</span></div> :
      <div className='switch-on-off'><span>开/</span>关</div>
      let switchTwo = this.state.onOfftwo ? <div className='switch-on-off'>开<span>/关</span></div> :
-      <div className='switch-on-off'><span>开/</span>关</div>
+      <div className='switch-on-off'><span>开/</span>关</div>;
+    let styles={
+      root:{
+        position:'absolute',
+        transition:'all 0.7s',
+        top:'0',
+        zIndex:'1',
+        left:this.state.show? '0' : '100%'
+      }
+    }
     return(
-      <div className='per-settings'>
+      <div className='per-settings' style={styles.root}>
         <div className='settings-top'>
-          <img src={left2} className='return'/>
+          <img src={left2} className='return' onClick={this.handleShow.bind(this)}/>
           <img src={yi} className='yi'/>
         </div>
         <div className='settings-options'>

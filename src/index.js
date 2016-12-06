@@ -5,6 +5,8 @@ import './main.css';
 import './shuffling.css';
 import './swiper.min.css';
 import './login.css';
+import "./recommend.css"
+import Routes from './routes.js';
 import injectTapEventPlugin from 'react-tap-event-plugin';
 injectTapEventPlugin();
 render(<Start />,document.getElementById('root'));

@@ -5,6 +5,13 @@ import Login from './login';
 
 class Show extends React.Component {
   render () {
+  	let styles={
+  		root:{
+  			display:"flex",
+  			flexDirection:"column",
+  			flexWrap:"wrap"
+  		}
+  	}
     return(
       <div>
       	<Login />

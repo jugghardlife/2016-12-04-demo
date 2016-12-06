@@ -12,4 +12,5 @@ ul,li{
 	position: fixed;
 	bottom: 0;
 	width: 100vw;
+	text-decoration: none;
 }

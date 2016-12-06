@@ -8,7 +8,6 @@ import Yunji from './Person/Yunji';
 import Avater from './Person/Avater';
 import Footer from './Person/Footer';
 
-
 class Personal extends React.Component {
   render () {
     return(

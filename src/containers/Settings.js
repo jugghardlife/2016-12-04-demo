@@ -28,7 +28,7 @@ class Settings extends React.Component {
       <div className='switch-on-off'><span>开/</span>关</div>;
     let styles={
       root:{
-        position:'absolute',
+        position:'fixed',
         transition:'all 0.7s',
         top:'0',
         zIndex:'1',

@@ -1,8 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router';
-import Top from '../containers/Top';
-import Center from '../containers/Center';
-
+import Shuffling from './shuffling';
+import Login from './login';
 
 class Show extends React.Component {
   render () {
@@ -14,9 +13,8 @@ class Show extends React.Component {
   		}
   	}
     return(
-      <div >
-        <Top />
-        <Center />
+      <div>
+        哈哈哈
       </div>
     )
   }

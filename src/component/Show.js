@@ -9,9 +9,7 @@ class Show extends React.Component {
   render () {
     return(
       <div>
-      <div>
         <Top />
-      </div>
       </div>
     )
   }

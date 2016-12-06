@@ -44,7 +44,7 @@ class Shuffling extends React.Component {
             <div className="swiper-slide slide4"></div>
             <div className="swiper-slide slide5" ref='nopagination'>
               <p style={{display:"block",marginTop: "70vh",textAlign: "center",color:"#666"}}>{this.state.data}</p>
-              <Link to="/" activeStyle={{display:"block",marginTop: "3vh",textAlign: "center",color:"#666",textDecoration:"none"}}>今日推送 >></Link>
+              <p style={{display:"block",marginTop: "20vh",textAlign: "center",color:"#666",textDecoration:"none"}} onClick={this.props.xxx}>今日推送 >></p>
             </div>
         </div>
         <div className="swiper-pagination" ref='dott'></div>
